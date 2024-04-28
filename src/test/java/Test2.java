@@ -28,7 +28,7 @@ public class Test2
         String platformName = System.getenv("HYPEREXECUTE_PLATFORM") != null ? System.getenv("HYPEREXECUTE_PLATFORM") : platform;
         
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("build", "[HyperExecute - 2] Demonstration of the TestNG Framework");
+        capabilities.setCapability("build", "HYP-9196");
         capabilities.setCapability("name", "[HyperExecute - 2] Demonstration of the TestNG Framework");
 
         capabilities.setCapability("platform", System.getenv("HYPEREXECUTE_PLATFORM"));
@@ -67,7 +67,7 @@ public class Test2
 
         WebElement addText = driver.findElement(textField);
 
-        int item_count = 5;
+        int item_count = 50;
 
         for (int i = 1; i <= item_count; i++) {
             addText.click();

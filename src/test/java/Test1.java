@@ -30,7 +30,7 @@ public class Test1
         
         DesiredCapabilities capabilities = new DesiredCapabilities();
 
-        capabilities.setCapability("build", "[HyperExecute - 1] Demonstration of the TestNG Framework");
+        capabilities.setCapability("build", "HYP-9196");
         capabilities.setCapability("name", "[HyperExecute - 1] Demonstration of the TestNG Framework");
         capabilities.setCapability("platform", System.getenv("HYPEREXECUTE_PLATFORM"));
         capabilities.setCapability("browserName", browser);
@@ -69,7 +69,7 @@ public class Test1
 
         WebElement addText = driver.findElement(textField);
 
-        int item_count = 5;
+        int item_count = 50;
 
         for (int i = 1; i <= item_count; i++) {
             addText.click();
@@ -126,7 +126,7 @@ public class Test1
 
         WebElement addText = driver.findElement(textField);
 
-        int item_count = 5;
+        int item_count = 50;
 
         for (int i = 1; i <= item_count; i++) {
             addText.click();
